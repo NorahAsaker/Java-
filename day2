@@ -1,1 +1,58 @@
+{
+    public static void main(String[] args) {
 
+String Nickname = "  noazas  ";
+System.out.println("Nickname: "+Nickname.toUpperCase().trim()+" Nickname Length: "+Nickname.length());
+String Age = "nineteen";
+System.out.println(Age.endsWith("teen")+" "+ Age.contains("n"));
+String Checkname = "NoRah";
+System.out.println(Checkname.charAt(2) +" "+ Checkname.startsWith("d"));
+System.out.println(Checkname.equals("NoRah"));
+
+
+        Scanner Check = new Scanner(System.in);
+        Scanner Agee = new Scanner(System.in);
+        System.out.println("Write your nickname: ");
+        String Nickname = Check.next();
+
+        if (Nickname.contains(".") == true ) {
+            System.out.println("Cant Write Charecters");
+        } else if (Nickname.contains(".")== false) {
+            System.out.println("Write your Age: ");
+            int Age = Agee.nextInt();
+            if (Age >=18)
+            System.out.println("Welcome in "+ Nickname.toUpperCase());
+            else
+                System.out.println("Not Available For Under 18 Users");
+        }|| Grade <= 100
+
+         Scanner G = new Scanner(System.in);
+         System.out.println("Write Your Score :");
+         int Grade = G.nextInt();
+         if ((Grade >=95 && Grade <= 100 )== true) {
+                     System.out.println("Your Grade is A+");
+                 } else if ((Grade>=94&& Grade <=90)== true) {
+                             System.out.println("Your Grade is A");
+                 } else if ((Grade >=85 && Grade<=89)== true) {
+                             System.out.println("Your Grade is B+");
+                 } else if ((Grade>=80&& Grade <=84)== true) {
+                             System.out.println("Your Grade is B");
+                 } else if ((Grade >=75 &&Grade <=79)== true) {
+                             System.out.println("Your Grade is C+");
+                 } else if ((Grade >=70 && Grade <=74)==true) {
+                             System.out.println("Your Grade is C");
+                 } else if ((Grade >=65 && Grade<=69)==true) {
+                             System.out.println("Your Grade is D+");
+                 } else if ((Grade >=60 && Grade<=64)==true) {
+                             System.out.println("Your Grade is D");
+                 } else if ((Grade>100)==true) {
+                             System.out.println("Please Type A real Score");
+                 } else
+                     System.out.println("Im Sorry To Inform you That You Have Failed");
+
+
+        
+
+
+    }
+}
