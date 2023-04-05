@@ -1,0 +1,161 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+//Day 1
+         //1
+        
+       String fullname = "Norah Asaker";
+        System.out.println(fullname);
+        
+        
+          //2
+        int age = 18;
+                System.out.println(age);
+        
+        
+           //3
+        int one = 4;
+                int two = 9;
+                       int sum = one + two;
+                        System.out.println(sum);
+int three = sum /2;
+        System.out.println(three);
+        
+        
+         //4
+        int height = 5;
+                int width = 7;
+                int area = height * width;
+                        int perimeter =(2*height+2*width);
+                System.out.println("Area = "+area+" Perimeter = "+perimeter);
+
+         //5
+           int one1 = 23;
+           int two2 = 45;
+        boolean three3 = one1 == two2;
+         System.out.println(three3);
+
+        //6
+        int a =55;
+        int b =70;
+        boolean ab = a<50 && a<b;
+        System.out.println(ab);
+        
+        
+         //7
+        boolean ab2 = a<50 || a<b;
+       System.out.println(ab2);
+
+
+             //Day 2
+           
+        //1
+        Scanner num = new Scanner(System.in);
+        System.out.println("enter number");
+        int Num = num.nextInt();
+        if (Num > 0) {
+            System.out.println("Number is positive");
+        } else if (Num<0) {
+            System.out.println("Number is negative");
+        } else {
+            System.out.println("Number is 0");
+        }
+        
+             //2
+
+        Scanner d = new Scanner(System.in);
+        System.out.println("Write a name");
+        String word = d.nextLine();
+        System.out.println("Enter the number ");
+        Scanner p = new Scanner((System.in));
+        int place = p.nextInt();
+        System.out.println("The letter on this index " + "("+place+")" + " is " +"("+ word.charAt(place)+")");
+
+          //3
+        Scanner n = new Scanner(System.in);
+                System.out.println("Write a name");
+         String name = n.nextLine();
+        Scanner l = new Scanner(System.in);
+        System.out.println("Write letter to check");
+                String letter = l.next();
+                System.out.println(name.contains(letter));
+
+            //4
+        Scanner n1 = new Scanner(System.in);
+        System.out.println("Write the first number");
+        int num1 = n1.nextInt();
+        Scanner n2 = new Scanner(System.in);
+        System.out.println("Write the second number");
+        int num2 = n2.nextInt();
+        Scanner n3 = new Scanner(System.in);
+        System.out.println("Write the third number");
+        int num3 = n3.nextInt();
+        if (num1 > num3 && num1 > num2) {
+            System.out.println(num1);
+        } else if (num2 > num1 && num2 > num3) {
+            System.out.println(num2);
+        } else if (num3 > num1 && num3 > num2) {
+            System.out.println(num3);
+        } else if (num1 == num2 && num2 == num3) {
+            System.out.println("All numbers are  equal");
+        } else if (num2 == num3 && num2 > num1) {
+            System.out.println(num2);
+        } else if (num2 == num3 && num2 < num1) {
+            System.out.println(num1);
+        } else if (num1 == num3 && num1 > num2) {
+            System.out.println(num1);
+        } else if (num1 == num3 && num1 < num2) {
+            System.out.println(num2);
+        } else if (num2==num1 && num1>num3){
+            System.out.println(num1);
+        } else if (num2==num1 && num1<num3){
+            System.out.println(num3);
+        }
+
+    //Day 3
+        //1
+        int num= 0;
+        for (int i=1;i<100;i++ ){
+      if (num%2 == 0){
+    System.out.println("Number is even");
+    }num++;
+    System.out.println(num);
+        }
+
+        //2
+        for (int n= 0; n<=100; n++) {
+if (n%2!=0){
+    continue;
+}
+            System.out.println(n);
+        }
+
+        //3
+        for (int m=1;m<=10;m++){
+            System.out.println(m);
+        if (m==4){
+            break;
+
+        }
+        }
+
+        //4 - بعد البحث :
+        Scanner n= new Scanner(System.in);
+        System.out.println("Write a name");
+        String line = n.nextLine();
+        for ( char a : line.toCharArray()) {
+
+            System.out.println(a);
+
+        }
+        
+        //5 - بعد البحث :
+        Scanner n= new Scanner(System.in);
+        System.out.println("Write a name");
+        String line = n.nextLine();
+        StringBuilder sb= new StringBuilder();
+        sb.append(line);
+        sb.reverse();
+
+        System.out.println(sb);
