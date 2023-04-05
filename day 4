@@ -1,0 +1,98 @@
+
+//     day 4 (during course)
+
+        //1
+        String[] names = new String[3];
+     names[0]= "Norah";
+     names[1]="Sara";
+     names[2]="lama";
+
+        System.out.println(Arrays.toString(names));
+
+        //2
+System.out.println("You Can Only Choose Three Numbers ");
+        Scanner n1 = new Scanner(System.in);
+        System.out.println("choose a Number (1) ");
+        int n = n1.nextInt();
+        Scanner n2 = new Scanner(System.in);
+        System.out.println("choose a Number (2) ");
+        int a = n1.nextInt();
+        Scanner n3 = new Scanner(System.in);
+        System.out.println("choose a Number (3) ");
+        int m = n1.nextInt();
+          //3
+int[] namer = {n,a,m};
+System.out.println(Arrays.toString(namer));
+for(int namees : namer){
+    if(namees%2 !=0){
+        System.out.println(namees+"  is odd");
+    }
+}
+      //4
+        ArrayList colors = new ArrayList<>();
+        colors.add("blue");
+        colors.add("green");
+        colors.add("black");
+        colors.add("red");
+        colors.set(2,"white");
+        colors.remove("green");
+        System.out.println(colors);
+
+//      day4
+//        1
+        int[] scores = {50, 60, 40, 10, 38, 65, 87, 56, 90, 100, 66, 80, 88, 40, 98};
+        for (int Grade : scores) {
+            if ((Grade >= 95 && Grade <= 100) == true) {
+                System.out.println(Grade+" Your Grade is A+");
+            } else if ((Grade >= 94 && Grade <= 90) == true) {
+                System.out.println(Grade+" Your Grade is A");
+            } else if ((Grade >= 85 && Grade <= 89) == true) {
+                System.out.println(Grade+" Your Grade is B+");
+            } else if ((Grade >= 80 && Grade <= 84) == true) {
+                System.out.println(Grade+" Your Grade is B");
+            } else if ((Grade >= 75 && Grade <= 79) == true) {
+                System.out.println(Grade+" Your Grade is C+");
+            } else if ((Grade >= 70 && Grade <= 74) == true) {
+                System.out.println(Grade+" Your Grade is C");
+            } else if ((Grade >= 65 && Grade <= 69) == true) {
+                System.out.println(Grade+" Your Grade is D+");
+            } else if ((Grade >= 60 && Grade <= 64) == true) {
+                System.out.println(Grade+" Your Grade is D");
+            } else if ((Grade > 100) == true) {
+                System.out.println(Grade+ " Please Type A real Score");
+            } else
+                System.out.println(Grade+" Im Sorry To Inform you That You Have Failed");
+        }
+
+           //2
+        String[] nammes = { "Shaza","Mohamed","Asmaa","Anfal","Yousra","Amin","Radwa","Yasmeen"};
+        for (String en:nammes) {
+            if (en.startsWith("A")){
+                System.out.println(en);
+            }
+
+        }
+        //3
+         int [] nums = {50,60,40,10,38,65,87,56,90,100,66,80,88,40,98};
+        for (int num:nums) {
+            if (num>50){
+                System.out.println(num);
+            }
+        }
+           //4
+        Scanner c = new Scanner(System.in);
+        System.out.println("Write a number to check");
+        int check = c.nextInt();
+
+        int[] nume = {1,13,14,16,8,80,90,50,55,40,40};
+        for (int bb: nume) {
+            if (bb==check){
+                System.out.println("the number is in the array = "+check);
+            } else if (bb!=check){
+                System.out.println("the number is not on the array");
+                break;
+            }
+
+        }
+
+
